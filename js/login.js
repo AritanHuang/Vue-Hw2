@@ -21,7 +21,7 @@ createApp({
                     // const expired = res.data.expired;
                     const { token, expired } = res.data; //解構寫法 用在名稱不變時
                     document.cookie = `AritanCookie=${token}; expires=${new Date(expired)}; `;
-                    window.location = '.../products.html';
+                    window.location = 'products.html';
                 })
                 .catch(err => {
                     console.log(err);
