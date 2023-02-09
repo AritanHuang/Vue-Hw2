@@ -75,10 +75,11 @@
                                 </div>
                             </div>
                         </div>
-                        <template v-if="tempProducts?.imagesUrl?.length">
+                        <template v-if="tempProducts.imagesUrl[0]">
                             <img v-for="(img, index) in tempProducts.imagesUrl" :key="img" v-bind:src="img" alt=""
                                 class="images m-2">
                         </template>
+                        <p v-else>沒有詳細圖片</p>
                     </template>
                     <p v-else class="text-secondary">請選擇一個商品查看</p>
                 </div>
