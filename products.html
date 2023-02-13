@@ -76,7 +76,7 @@
                             </div>
                         </div>
                         <template v-if="tempProducts.imagesUrl[0]">
-                            <img v-for="(img, index) in tempProducts.imagesUrl" :key="img" v-bind:src="img" alt=""
+                            <img v-for="(img, index) in tempProducts.imagesUrl" :key="index" v-bind:src="img" alt=""
                                 class="images m-2">
                         </template>
                         <p v-else>沒有詳細圖片</p>
